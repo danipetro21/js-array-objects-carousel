@@ -97,7 +97,7 @@ next.addEventListener("click", function () {
     div.innerHTML = img;
     titleC.innerHTML = title;
     textC.innerHTML = text;
-    
+
 
 });
 
@@ -128,6 +128,7 @@ function anteprima(contatore) {
 
     if (contatore == 0) {
         imgAnteprima1.style.cssText = 'border: 5px solid red;';
+        
         imgAnteprima2.style.cssText = 'border: trasparent; opacity: 0.3;';
         imgAnteprima3.style.cssText = 'border: trasparent; opacity: 0.3;';
         imgAnteprima4.style.cssText = 'border: trasparent; opacity: 0.3;';
@@ -164,4 +165,28 @@ function anteprima(contatore) {
 
     }
 }
+
+//prova click img
+
+imgAnteprima1.addEventListener('click', (event) => {
+    img = `<img src="${images[0].image}" alt="img${0}">`;
+    div.innerHTML = img;
+});
+
+imgAnteprima2.addEventListener('click', (event) => {
+    img = `<img src="${images[1].image}" alt="img${1}">`;
+    div.innerHTML = img;
+});
+imgAnteprima3.addEventListener('click', (event) => {
+    img = `<img src="${images[2].image}" alt="img${2}">`;
+    div.innerHTML = img;
+});
+imgAnteprima4.addEventListener('click', (event) => {
+    img = `<img src="${images[3].image}" alt="img${3}">`;
+    div.innerHTML = img;
+});
+imgAnteprima5.addEventListener('click', (event) => {
+    img = `<img src="${images[4].image}" alt="img${4}">`;
+    div.innerHTML = img;
+});
 
